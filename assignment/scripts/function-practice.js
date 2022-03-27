@@ -11,7 +11,6 @@ function hello() {
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
-
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
@@ -50,16 +49,26 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+let tester = ['Jackie','Brown','Tarantino']
+function getLast( array ) {
+return array[ array.length-1 ];
 }
+console.log(getLast(tester))
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let jim = ['Me','Myself','Irene']
 function find( value, array ){
-  
-}
+  for(i=0; i<array.length;i++){
+    if (array.some(j => j === value)){
+      return true;
+    }else{
+      return false;
+    }
+  }
+}console.log(find('Irene',jim));
 
 // ----------------------
 // Stretch Goals
@@ -67,8 +76,12 @@ function find( value, array ){
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
-}
+  if (letter === string[0]){
+  return true;
+  }else{
+    return false;
+   }
+  }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
