@@ -111,6 +111,26 @@ function posOnly(array1,array2){
     return array2;
   }
   console.log(posOnly(t1,t2));
+console.log(`I wasn't exactly sure if you meant an array created by the input of a user(like a prompt) or just an array that is the input for the function so I did both and put the 2nd in comments`)
+// let t1 = [];
+// let t2 = [];
+// function onlyPos(array1,array2){
+//      for (j=0; j < 5; j++ ) {
+//      array1.push(prompt("Enter a number."));
+// }
+//          for(i=0; i < array1.length; i++){
+//           if (array1[i] > 0 ){
+//             array2.push(array1[i]);
+//     }
+// } 
+// return array2;
+// }
+
+// console.log(onlyPos(t1,t2));
+
+
+
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
