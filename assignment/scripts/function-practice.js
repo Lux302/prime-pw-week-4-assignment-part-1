@@ -1,4 +1,6 @@
 console.log('***** Function Practice *****')
+console.log(`Hey Dev!\n Hope you're having a great day!`);
+
 
 // Add the required code to complete the functions below
 // After _each_ function, use a console log to call the function
@@ -111,7 +113,7 @@ function posOnly(array1,array2){
     return array2;
   }
   console.log(posOnly(t1,t2));
-console.log(`I wasn't exactly sure if you meant an array created by the input of a user(like a prompt) or just an array that is the input for the function so I did both and put the 2nd in comments`)
+console.log(`I wasn't exactly sure if you meant an array created by the input of a user(like a prompt) or just an array that is the input for the function so I did both and put the first above and the second in comments below`)
 // let t1 = [];
 // let t2 = [];
 // function onlyPos(array1,array2){
@@ -136,4 +138,3 @@ console.log(`I wasn't exactly sure if you meant an array created by the input of
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
-console.log(`Hey Dev!\n Hope you're having a great day!`);
