@@ -113,7 +113,7 @@ function posOnly(array1,array2){
     return array2;
   }
   console.log(posOnly(t1,t2));
-console.log(`I wasn't exactly sure if you meant an array created by the input of a user(like a prompt) or just an array that is the input for the function so I did both and put the first above and the second in comments below`)
+console.log(`I wasn't exactly sure if you meant an array created by the input of a user (like a prompt) or just an array that is the input for the function so I did both and put the first above and the second in comments below`)
 // let t1 = [];
 // let t2 = [];
 // function onlyPos(array1,array2){
