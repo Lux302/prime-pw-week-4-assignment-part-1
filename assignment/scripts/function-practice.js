@@ -14,10 +14,10 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return'Frank';
+  return`Hello ${name}`;
 }
 // Remember to call the function to test
-console.log(helloName());
+console.log(helloName('Frank'))
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( num1,num2 ) {
@@ -86,18 +86,34 @@ console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+// TODO: loop to add items
+let tArray = [2,4,6,8];
+function sumAll(array) {
   let sum = 0
-  // TODO: loop to add items
-  return sum;
+  for (let i in array) {
+  sum += array[i];
+ }
+  return (sum);
 }
+console.log(sumAll(tArray));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
+let t1 = [-1,-2,-3,-4,-5,-6,-7,-8,-9,0,1,2,3,4,5,6,7,8,9];
+let t2 =[]
+function posOnly(array1,array2){
+  for(i=0; i<array1.length; i++){
+    if (array1[i] > 0){
+      array2.push(array1[i]);
+     }
+    } 
+    return array2;
+  }
+  console.log(posOnly(t1,t2));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+console.log(`Hey Dev!\n Hope you're having a great day!`);
